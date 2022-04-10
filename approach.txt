@@ -1,0 +1,14 @@
+The parking lot will be of size N
+
+For the sake of simplicity, The parking lot will have two entry/exits for now
+
+I will take N as input from the user from a Textbox
+
+We will generate a Parking lot of size N where all spots have been occupied
+
+Every incoming car can come from either one of the entrances (Front / Rear)
+
+
+
+
+
