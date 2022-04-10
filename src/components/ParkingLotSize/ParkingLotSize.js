@@ -5,10 +5,21 @@ const ParkingLotSize = ({ setParkingLotSize }) => {
 		setParkingLotSize(event.target.value);
 	};
 	return (
-		<div>
+		<div
+			style={{
+				display: 'flex',
+				justifyContent: 'center',
+				padding: '1em',
+			}}
+		>
 			<label>
 				Enter size of parking lot
 				<input
+					style={{
+						padding: '12px 20px',
+						margin: ' 8px 8px',
+						boxSizing: 'borderBox',
+					}}
 					type='text'
 					onChange={debounce(changeParkingSize, 500)}
 				/>
