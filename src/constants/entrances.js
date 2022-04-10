@@ -1,4 +1,4 @@
-export const ENTRANCE = {
+export const ENTRANCES = {
 	FRONT: 'front',
 	REAR: 'rear',
 };

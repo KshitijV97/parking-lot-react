@@ -1,4 +1,4 @@
-export const districtCodes = [
+export const DISTRICTS = [
 	'00',
 	'01',
 	'02',
