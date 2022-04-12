@@ -1,10 +1,16 @@
-export const Dropdown = ({ label, value, options, onChange }) => {
+export const Dropdown = ({ label, value, options, onChange, placeholder }) => {
 	return (
 		<label>
-			{label}
+			<span style={{ padding: '1em' }}>{label}</span>
+
 			<select value={value} onChange={onChange}>
-				{options.map((option) => (
-					<option value={option.value}>{option.label}</option>
+				<option value='' selected disabled>
+					{placeholder}
+				</option>
+				{options.map((option, index) => (
+					<option value={option.value} key={index}>
+						{option.label}
+					</option>
 				))}
 			</select>
 		</label>
