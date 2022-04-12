@@ -13,6 +13,7 @@ export const addCar = (parkingLot, setParkingLot, entrance) => {
 			car,
 			...parkingLot.slice(emptySlot + 1, parkingLot.length),
 		]);
+		alert(`New car added successfully at ${car.ticketNumber} slot`);
 	} else {
 		alert('Cannot add more cars as the Parking lot is full');
 		return false;
