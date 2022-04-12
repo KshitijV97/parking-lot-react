@@ -3,6 +3,7 @@ import { getRegistrationNumbersByColor } from '../../functions/getRegistrationNu
 import { Dropdown } from '../Dropdown/Dropdown';
 import { FilteredResult } from '../FilteredResult/FilteredResult';
 
+// Component which displays registration numbers by Color of car 
 export const DisplayRegistrationNumbersByColor = ({
 	parkingLot,
 	availableColors,

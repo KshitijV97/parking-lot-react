@@ -1,5 +1,11 @@
 import { compareJsonObjects } from '../helpers/compareJsonObjects';
 
+/**
+ * 
+ * @param {Array} parkingLot State variable which is an array and stores the Parking lot
+ * @param {Function} setParkingLot Function to set the parking lot
+ * @param {JSON Object} car Car to be removed
+ */
 export const removeCar = (parkingLot, setParkingLot, car) => {
 	let carFound = false;
 	console.log('Given car is', car);

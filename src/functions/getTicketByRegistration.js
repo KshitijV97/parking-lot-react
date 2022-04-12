@@ -1,3 +1,9 @@
+/**
+ *
+ * @param {Array} parkingLot State variable which stores the parking lot
+ * @param {String} registrationNumber Registration number of car
+ * @returns {number | null} Ticket number of car with particular registration number
+ */
 export const getTicketByRegistration = (parkingLot, registrationNumber) => {
 	let cars = parkingLot.filter((car) => {
 		return car.registrationNumber === registrationNumber;

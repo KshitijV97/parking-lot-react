@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { COLORS } from '../../constants/colors';
 
+// Component to show a single parking slot, Shows all details and allows to remove car
 const ParkingSlot = ({
 	ticketNumber,
 	registrationNumber,

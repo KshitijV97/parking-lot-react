@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { debounce } from '../../helpers/debounce';
 import { getTicketByRegistration } from '../../functions/getTicketByRegistration';
 
+// Component that displays ticket number of car with given registration number
 export const DisplayTicketsByRegistration = ({ parkingLot }) => {
 	const [registrationNumber, setRegistrationNumber] = useState('');
 	const [ticket, setTicket] = useState('');

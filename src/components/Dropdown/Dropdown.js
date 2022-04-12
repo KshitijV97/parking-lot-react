@@ -1,3 +1,5 @@
+// Reusable component to render a Dropdown
+
 export const Dropdown = ({ label, value, options, onChange, placeholder }) => {
 	return (
 		<label>

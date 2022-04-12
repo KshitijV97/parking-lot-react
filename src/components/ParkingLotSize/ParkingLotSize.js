@@ -1,5 +1,6 @@
 import { debounce } from '../../helpers/debounce';
 
+// Component to take size of parking lot from user
 const ParkingLotSize = ({ setParkingLotSize }) => {
 	const changeParkingSize = (event) => {
 		setParkingLotSize(event.target.value);

@@ -2,6 +2,7 @@ import React from 'react';
 import { ENTRANCES } from '../../constants/entrances';
 import { addCar } from '../../functions/addCar';
 
+// Component which can be used to add car to the parking lot from either entrance
 export const AddCars = ({ parkingLot, setParkingLot }) => {
 	return (
 		<div

@@ -3,6 +3,7 @@ import { getTicketsByColor } from '../../functions/getTicketsByColor';
 import { FilteredResult } from '../FilteredResult/FilteredResult';
 import { Dropdown } from '../Dropdown/Dropdown';
 
+// Component which displays ticket numbers by Color of car 
 export const DisplayTicketNumbersByColor = ({
 	parkingLot,
 	availableColors,

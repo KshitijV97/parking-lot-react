@@ -1,12 +1,10 @@
-import { addCar } from '../../functions/addCar';
-import { ENTRANCES } from '../../constants/entrances';
 import { COLORS } from '../../constants/colors';
-
 import { DisplayRegistrationNumbersByColor } from './DisplayRegistrationNumbersByColor';
 import { DisplayTicketNumbersByColor } from './DisplayTicketNumbersByColor';
 import { DisplayTicketsByRegistration } from './DisplayTicketsByRegistration';
 import { AddCars } from './AddCars';
 
+// The components used to query results are rendered here
 const Queries = ({ parkingLot, setParkingLot }) => {
 	let availableColors = Object.keys(COLORS).map((color) => {
 		return {

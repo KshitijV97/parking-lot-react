@@ -4,10 +4,11 @@ import { COLORS } from '../constants/colors';
 import { getEntrance } from './getEntrance';
 import { getColor } from './getColor';
 import { getRegistrationNumber } from './getRegistrationNumber';
-/**
- * @returns - {A car with entrance, color, registration number }
- */
 
+/**
+ *
+ * @returns {car} Random car with entrance, color, registrationNumber
+ */
 export const generateCar = () => {
 	let availableEntrances = Object.keys(ENTRANCES);
 	let availableColors = Object.keys(COLORS);

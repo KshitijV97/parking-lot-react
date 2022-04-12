@@ -1,3 +1,4 @@
+// Reusable component to show results of filtered cars parked in the Parking lot
 export const FilteredResult = ({ values }) => {
 	return (
 		<div

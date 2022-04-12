@@ -1,6 +1,7 @@
 import ParkingSlot from '../ParkingSlot/ParkingSlot';
 import { removeCar } from '../../functions/removeCar';
 
+// Parking lot component which shows which car is parked in which slot
 const ParkingLot = ({ parkingLot, setParkingLot }) => {
 	return (
 		<div>
