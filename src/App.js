@@ -39,7 +39,7 @@ function App() {
 		<div className='App'>
 			<ParkingSize setParkingLotSize={setParkingLotSize} />
 			<Queries parkingLot={parkingLot} setParkingLot={setParkingLot} />
-			<ParkingLot parkingLot={parkingLot} />
+			<ParkingLot parkingLot={parkingLot} setParkingLot={setParkingLot} />
 		</div>
 	);
 }
