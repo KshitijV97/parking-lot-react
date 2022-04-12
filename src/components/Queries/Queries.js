@@ -1,51 +1,32 @@
 import { addCar } from '../../functions/addCar';
 import { ENTRANCES } from '../../constants/entrances';
+import { COLORS } from '../../constants/colors';
+
+import { DisplayRegistrationNumbersByColor } from './DisplayRegistrationNumbersByColor';
+import { DisplayTicketNumbersByColor } from './DisplayTicketNumbersByColor';
+import { DisplayTicketsByRegistration } from './DisplayTicketsByRegistration';
+import { AddCars } from './AddCars';
 
 const Queries = ({ parkingLot, setParkingLot }) => {
+	let availableColors = Object.keys(COLORS).map((color) => {
+		return {
+			label: color,
+			value: COLORS[color],
+		};
+	});
+
 	return (
 		<div>
-			<div
-				style={{
-					display: 'flex',
-					justifyContent: 'center',
-					padding: '0.5em',
-					margin: '0.5em',
-				}}
-			>
-				<button
-					style={{
-						border: 'none',
-						textAlign: 'center',
-						textDecoration: 'none',
-						display: 'inline-block',
-						backgroundColor: '#D6CDEA',
-						padding: '15px 32px',
-						cursor: 'pointer',
-					}}
-					onClick={() => {
-						addCar(parkingLot, setParkingLot, ENTRANCES.FRONT);
-					}}
-				>
-					Add new car from front
-				</button>
-				<button
-					style={{
-						border: 'none',
-						textAlign: 'center',
-						textDecoration: 'none',
-						display: 'inline-block',
-						backgroundColor: '#D6CDEA',
-						padding: '15px 32px',
-						marginLeft: '1em',
-						cursor: 'pointer',
-					}}
-					onClick={() => {
-						addCar(parkingLot, setParkingLot, ENTRANCES.REAR);
-					}}
-				>
-					Add new car from rear
-				</button>
-			</div>
+			<AddCars parkingLot={parkingLot} setParkingLot={setParkingLot} />
+			<DisplayRegistrationNumbersByColor
+				parkingLot={parkingLot}
+				availableColors={availableColors}
+			/>
+			<DisplayTicketNumbersByColor
+				parkingLot={parkingLot}
+				availableColors={availableColors}
+			/>
+			<DisplayTicketsByRegistration parkingLot={parkingLot} />
 		</div>
 	);
 };
