@@ -1,12 +1,31 @@
-The parking lot will be of size N
+Assumptions: 
 
-For the sake of simplicity, The parking lot will have two entry/exits for now
+1. The parking lot will be of size N (Size will be taken from user)
+2. For the sake of simplicity, The parking lot will have two entrances (Front and rear)
+3. Initially we will generate a parking lot of size N where the slots have been randomly occupied
+3. Every incoming car will be of a random color and registration number and can come from either of the two entrances
+4. Incoming car is assigned slot which is closest from the entrance
+5. Cars parked in the parking lot can be removed
 
-I will take N as input from the user from a Textbox
+ReactJS implementation decisions
+1. Will maintain state in parent Component and pass it downt to children as props instead of using Redux / Context API
+2. Will use simple CSS-in-JS for styling instead of opting for something like styled-components library
+3. The viewport will be fixed to 1280px so that the content does not wrap around infinitely 
+5. React components, functions will be kept in separate folders
+6. Utility functions which are unrelated to functionality will be kept separately
+4. Text input taken from user will be debounced
 
-We will generate a Parking lot of size N where all spots have been occupied
 
-Every incoming car can come from either one of the entrances (Front / Rear)
+Starting the development
+1. Current state of Parking lot will be stored in parentmost component
+2. The parent component will have a useEffect listening if the User changes the parking lot size
+3. There is a Parking slot component which displays a single parking slot and details of the car parked 
+4. There are separate components for queries
+5. I am generating all required data randomly by having an array of the sample set and selecting one random element from the array
+
+
+
+
 
 
 
